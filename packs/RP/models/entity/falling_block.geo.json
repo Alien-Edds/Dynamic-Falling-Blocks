@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ae_dfb.falling_block",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "item2",
+					"parent": "item",
+					"pivot": [-0.6, 3.3, -0.4],
+					"rotation": [0, 45, 0]
+				},
+				{
+					"name": "item3",
+					"parent": "item2",
+					"pivot": [-0.6, 3.3, -0.4],
+					"rotation": [-20, 0, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "item3",
+					"pivot": [-0.6, 6.3, 5.6]
+				}
+			]
+		}
+	]
+}

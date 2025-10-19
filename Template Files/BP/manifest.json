@@ -1,0 +1,58 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": ["Alien Edds", "LightyIsReal"],
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "ebe76777-0a87-449b-9c3f-ad6f9985706d",
+        "min_engine_version": [
+            1,
+            21,
+            100
+        ],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "2aff48f6-f5be-4370-b206-55c4793010a4",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "entry": "scripts/main.js",
+            "uuid": "118b2b92-26fd-4ff5-b7ee-9a5fc46fa8fd",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.2.0"
+        },
+        {
+            "uuid": "09b3165d-3001-45bc-8dc7-ede0fa8d11ab",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

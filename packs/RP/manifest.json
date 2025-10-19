@@ -1,0 +1,43 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": ["Alien Edds", "LightyIsReal"],
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "09b3165d-3001-45bc-8dc7-ede0fa8d11ab",
+        "min_engine_version": [
+            1,
+            21,
+            100
+        ],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "d361a2d8-379c-4181-8693-97bbb4166714",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "ebe76777-0a87-449b-9c3f-ad6f9985706d",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

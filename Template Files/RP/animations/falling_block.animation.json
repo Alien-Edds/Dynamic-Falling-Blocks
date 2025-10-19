@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ae_dfb.falling_block.scale": {
+			"loop": true,
+			"bones": {
+				"item2": {
+					"position": [-1.2, 5.5, -1.4],
+					"scale": 2.675
+				}
+			}
+		},
+		"animation.ae_dfb.falling_block.rotate": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [-360, -360, 0]
+					}
+				}
+			}
+		}
+	}
+}

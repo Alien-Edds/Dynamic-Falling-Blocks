@@ -1,0 +1,32 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ae_dfb:falling_block",
+            "materials": {
+                "default": "entity_custom"
+            },
+            "textures": {
+                "default": "textures/ae_dfb/misc/invisible"
+            },
+            "geometry": {
+                "default": "geometry.ae_dfb.falling_block"
+            },
+            "animations": {
+                "rotate": "animation.ae_dfb.falling_block.rotate",
+                "scale": "animation.ae_dfb.falling_block.scale"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "rotate": "q.property('ae_dfb:rotating')"
+                    },
+                    "scale"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

@@ -1,0 +1,4 @@
+pack.name=Dynamic Falling Block Template
+pack.description=Made by Alien Edds.
+
+entity.ae_dfb:falling_block.name=Falling Block

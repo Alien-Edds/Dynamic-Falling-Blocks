@@ -1,0 +1,85 @@
+{
+    "format_version": "1.21.110",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "ae_dfb:falling_block",
+            "properties": {
+                "ae_dfb:rotating": {
+                    "client_sync": true,
+                    "default": false,
+                    "type": "bool"
+                }
+            },
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "components": {
+            "minecraft:equipment": {
+                "slot_drop_chance": [
+                    {
+                        "slot": "slot.weapon.mainhand",
+                        "drop_chance": 100
+                    }
+                ]
+            },
+            "minecraft:inventory": {
+                "can_be_siphoned_from": false,
+                "container_type": "container",
+                "inventory_size": 1,
+                "private": true
+            },
+            "minecraft:physics": {
+                "has_collision": true,
+                "has_gravity": true,
+                "push_towards_closest_space": false
+            },
+            "minecraft:water_movement": {
+                "drag_factor": 0
+            },
+            "minecraft:collision_box": {
+                "height": 0.01,
+                "width": 0.01
+            },
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "event": "ae_dfb:turn_to_block",
+                        "target": "self",
+                        "filters": {
+                            "test": "on_ground",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": "no"
+                    }
+                ]
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_optimized_distance": 100.0,
+                    "max_dropped_ticks": 7,
+                    "use_motion_prediction_hints": true
+                }
+            }
+        },
+        "events": {
+            "ae_dfb:turn_to_block": {
+                "queue_command": {
+                    "command": [
+                        "scriptevent ae_dfb:entity_event turn_to_block"
+                    ]
+                }
+            }
+        }
+    }
+}
